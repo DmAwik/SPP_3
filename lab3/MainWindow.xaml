@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab3.View"
         mc:Ignorable="d"
-        Title="Assembly Browser" Height="390" Width="640">
-    <Grid>
-        <TreeView ItemsSource="{Binding Namespaces}" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="600">
+        Title="Assembly Browser" Height="633" Width="958">
+    <Grid Margin="0,0,-107,-93">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <TreeView ItemsSource="{Binding Namespaces}" HorizontalAlignment="Left" Height="589" Margin="0,10,0,0" VerticalAlignment="Top" Width="925" Grid.ColumnSpan="3" Grid.Column="1">
             <TreeView.ItemTemplate>
                 <DataTemplate>
                     <TreeViewItem Header="{Binding Name}" ItemsSource="{Binding Classes}" BorderThickness="0">
@@ -26,6 +32,6 @@
                 </DataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>
-        <Button Command="{Binding OpenFile}" Content="Choose assembly" HorizontalAlignment="Left" Margin="260,320,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Command="{Binding OpenFile}" Content="Choose assembly" HorizontalAlignment="Left" Margin="633,19,0,0" VerticalAlignment="Top" Width="100" Grid.Column="3" Height="75"/>
     </Grid>
 </Window>

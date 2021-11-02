@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab3", "lab3\lab3.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyBrowserLib", "AssemblyBrowserLib\AssemblyBrowserLib.csproj", "{EDDBE11A-955C-4740-BE69-D213B5F87C05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{8EBB0BFD-A904-4B8B-A8E0-DB042B41FC49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EDDBE11A-955C-4740-BE69-D213B5F87C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDBE11A-955C-4740-BE69-D213B5F87C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDDBE11A-955C-4740-BE69-D213B5F87C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBB0BFD-A904-4B8B-A8E0-DB042B41FC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBB0BFD-A904-4B8B-A8E0-DB042B41FC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBB0BFD-A904-4B8B-A8E0-DB042B41FC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBB0BFD-A904-4B8B-A8E0-DB042B41FC49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
