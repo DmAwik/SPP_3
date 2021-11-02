@@ -13,7 +13,7 @@ namespace lab3.View
             this.execute = execute;
             this.canExecute = canExecute;
         }
-
+        
         public bool CanExecute(object parameter)
         {
             return this.canExecute == null || this.canExecute(parameter);

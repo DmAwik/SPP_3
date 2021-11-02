@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AssemblyBrowserLib.Levels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -32,7 +33,7 @@ namespace lab3.View
                       {
                           try
                           {
-                             // Namespaces = new AssemblyLevel(dialogService.FilePath).Namespaces.ConvertAll(assemblyNamespace => new NamespaceView(assemblyNamespace));
+                              Namespaces = new AssemblyLevel(dialogService.FilePath).Namespaces.ConvertAll(assemblyNamespace => new NamespaceView(assemblyNamespace));
                           }
                           catch (Exception ex)
                           {

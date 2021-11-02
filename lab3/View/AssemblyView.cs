@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using AssemblyBrowserLib.Levels;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -20,6 +21,10 @@ namespace lab3.View
             }
         }
 
+        public AssemblyView(AssemblyLevel assembly)
+        {
+            Namespaces = assembly.Namespaces.ConvertAll(assemblyNamespace => new NamespaceView((NamespaceLevel)assemblyNamespace));
+        }
 
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {

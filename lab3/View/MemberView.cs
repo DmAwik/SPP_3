@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using AssemblyBrowserLib.Levels;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace lab3.View
@@ -18,7 +19,20 @@ namespace lab3.View
             }
         }
 
+        public MemberView(FieldLevel field)
+        {
+            FullName = field.GetFullName();
+        }
 
+        public MemberView(PropertyLevel prop)
+        {
+            FullName = prop.GetFullName();
+        }
+
+        public MemberView(MethodLevel method)
+        {
+            FullName = method.GetFullName();
+        }
 
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {
